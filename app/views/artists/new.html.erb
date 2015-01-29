@@ -1,0 +1,8 @@
+<h1>New Artist</h1>
+
+<%= form_for @artist do |f| %>
+  <%= f.text_field :name, placeholder: 'Artist name...', class: 'form-control' %>
+  <%= f.text_field :stage, placeholder: 'Stage...', class: 'form-control' %>
+  <%= f.text_field :image_url, placeholder: 'Add an image here!', class: 'form-control' %>
+  <%= f.submit "Add Artist to Lineup", class: 'btn btn-large btn-success' %>
+<% end %>
